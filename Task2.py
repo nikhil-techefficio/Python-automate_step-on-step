@@ -9,9 +9,9 @@ def get_month_name(date):
 current_date = datetime.now()
 
 # Get the names of the current month, previous month, and the month before that
-current_month = get_month_name(current_date)
-previous_month = get_month_name(current_date - timedelta(days=current_date.day))
-month_before_previous = get_month_name(current_date - timedelta(days=current_date.day + 30))
+current_month = get_month_name(current_date) # will get current month
+previous_month = get_month_name(current_date - timedelta(days=current_date.day)) # will get current month -1
+month_before_previous = get_month_name(current_date - timedelta(days=current_date.day + 30))  # will get current month -2
 
 # Create a new workbook and add sheets
 wb = Workbook()
