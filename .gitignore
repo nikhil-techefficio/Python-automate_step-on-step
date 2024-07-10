@@ -1,0 +1,2 @@
+# Ignore chromedriver in a specific folder
+/path/to/chromedriver
